@@ -1,0 +1,914 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Signika Negative', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    max-width: 100%;
+    margin: auto;
+}
+/* navbar starts */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo a{
+    text-decoration: none;
+}
+.logo ul li {
+   list-style-type: none;
+   gap: 8rem;
+}
+.logo li{
+    position: relative;
+}
+
+
+.dropdown {
+    z-index: 999;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 0;
+    
+    /* Adjust the blur amount */
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    height: 30vh;
+    width: 100%;
+    list-style-type: none;
+    display: none;
+    /* Remove align-items and flex-direction properties */
+    /* Add padding or margin to space out list items */
+}
+
+.dropdown li {
+    padding: 2rem 0; /* Adjust padding as needed */
+    text-align: center;
+  
+    
+}
+
+.logo{
+    padding: 1rem;
+    padding-left: 2rem;
+    cursor: pointer;
+}
+
+nav div h1{
+    font-size: x-large;
+    font-weight: bold;
+    
+}
+
+nav div h1 span{
+    color: #e3097d;
+}
+.projects{
+    cursor: pointer;
+    font-size: large;
+    font-weight: bold;
+}
+
+.projects:hover{
+    
+    color: black;
+    transition: 0.3s;
+    transform: scale(1.2);
+    
+}
+
+
+.searchbar{
+    padding: 1rem;
+}
+
+input[type=text] {
+    padding: 0.8rem;
+    border: none; /* Remove the default border */
+    outline: none; /* Remove the default outline */
+    border-bottom: 2px solid transparent; /* Initially, the border is transparent and hidden */
+    transition: border-bottom 0.3s; /* Add a smooth transition effect */
+  
+    /* Other styles for padding, margins, font size, etc. */
+    
+    font-size: 17px;
+  }
+  
+  input[type=text]:focus {
+    border-bottom: 2px solid rgb(0, 0, 0); /* When focused (clicked), show a black border line at the bottom */
+  }
+/* navbar ends */
+
+
+/*  horizontal navbar starts */
+.horizontal-nav{
+    display: flex;
+}
+.hori-menu{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    gap: 5rem;
+    background-color: bisque;
+    height: 80vh;
+    width: 15%;
+    list-style-type: none;
+    
+    
+}
+
+div ul li a{
+    text-decoration: none;
+    color: black;
+    
+}
+div ul li a:hover{
+    color: black;
+    letter-spacing: 0.2rem;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-top: 2px solid rgb(0, 0, 0);
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    transition: 0.3s;
+
+}
+
+
+/*  horizontal navbar ends */
+/* article part starts */
+main{
+    display: flex;
+    margin-left: 3.9rem;
+ 
+}
+main article span{
+    color: #e3097d;
+    
+}
+
+.squaretext{
+    width: 750px; /* Set the width to create a square */
+    height: 200px; /* Set the height to match the width */
+    background-color: lightgray;
+    padding: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.squaretext span{
+    color: #e3097d;
+    font-size: x-large;
+    font-weight: bold;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+}
+
+main article h1{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+main article h4{
+    margin-top: 2rem;
+}
+aside
+{
+    padding: 2rem;
+    max-height: 80vh;
+}
+
+.my-pic{
+    
+   
+    width: 25rem;
+    height: 35rem;
+    border: 0.5rem;
+
+    filter: saturate(0);
+}
+
+.my-pic:hover{
+    filter: saturate(1);
+}
+
+/* article,picture,objectives part ends */
+
+/* footer part starts */
+footer{
+    background-color: white;
+    color: #222;
+    display: flex;
+    justify-content: space-between;
+    min-height: 4vh;
+    align-items: center;
+    padding: 1rem;
+}
+
+.copyright-text{
+    font-size: 0.8rem;
+}
+
+.footer-link{
+    color: black;
+}
+.footer-nav{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-link:hover{
+    color: black;
+    transform: scale(1.5);
+    transition: 0.3s;
+}
+
+
+
+/* footrer part ends */
+
+/* skill section starts here */
+.section{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+.skills{
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+    margin: 12rem;
+    padding-left: 7rem;
+    padding-bottom: 10rem;
+    margin-bottom: 10rem;
+
+}
+.skill-name{
+    font-size: 18px;
+    font-weight: 700px;
+    color: #222;
+    text-transform: uppercase;
+    margin: 20px 0;
+
+}
+
+.skill-bar{
+    height: 14px;
+    background: #282828;
+    border-radius: 10px;
+}
+
+.skill-per{
+    height: 14px;
+    background: #e3097d;
+    border-radius: 10px;
+    position: relative;
+    animation: fillbars 2.5s 1;
+}
+
+.skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: #e3097d;
+    border-radius: 10px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+
+}
+
+.skill-per::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #e3097d;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 10px;
+
+}
+
+@keyframes fillbars{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+
+
+
+/* skill section ends here */
+
+
+/*contact section starts here*/
+.contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.contact-items{
+    padding: 10rem;
+}
+
+#contact-section{
+    background-color: #d4d4d4;
+    height: 80vh;
+    margin: 0 5rem;
+    overflow: hidden;
+}
+
+.form-control{
+   margin-bottom: 2rem; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.form-control label{
+    font-size: 1.6rem;
+    flex: 0.3;
+}
+.form-control > input,textarea{
+    flex: 0.7;
+    width: 40rem;
+    padding: 2rem, 1rem;
+    border: none;
+    border-radius: 0.6rem;
+}
+input{
+    height: 5vh;
+}
+textarea{
+    resize: none;
+    height: 12vh;
+
+}
+.form-btn-field{
+    display: flex;
+    justify-content: end;
+    padding: 1rem;
+}
+    
+.contact__btn{
+   padding: 0.5rem;
+   border-radius: 15%;
+   
+}
+.name{
+    margin-right: 0.7rem;
+}
+
+form{
+   
+    padding: 1rem;
+    color: black;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__btn{
+    cursor: pointer;
+}
+
+.contact__btn:hover{
+    background-color: #b9b9b9;
+    transition: 0.3s;
+}
+
+
+
+
+/*contact section ends here*/
+
+/* about me section starts */
+.about-me{
+   
+    width: 38%;
+    background-color: #b9b9b9;
+    margin: 2rem;
+    
+    
+    
+}
+
+.about-me-paragraph{
+    padding: 2rem;
+    font-size: large;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.experiences{
+    width: 38%;
+    background-color: #b9b9b9;
+    margin: 2rem;
+    margin-left: 0;
+    padding: 20px;
+    font-size: large;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.experience-header{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+
+/*   about me section ends */
+
+
+
+
+
+/* responsiveness */
+@media (min-width: 1920px){
+      /* Reset any adjustments made for smaller screens */
+      .horizontal-nav {
+        display: flex;
+        justify-content: space-between;
+        
+        
+    }
+    .hori-menu{
+        min-width: 18%;
+    }
+    article{
+        margin-left: 2rem;
+    }
+
+    .hori-menu {
+        width: auto;
+        flex-direction: column;
+        max-width: 300px;
+    }
+
+    .hori-items {
+        padding: 0.5rem 1rem;
+        font-size: larger;
+    }
+  
+
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+
+    article {
+        width: auto;
+        margin: 12rem;
+    }
+
+    aside{
+        width: 60%;
+        margin-right: 5rem;
+    }
+    .my-pic {
+        width: 380px;
+        height: 465px;
+
+    }
+    section{
+        padding-top: 5rem;
+        padding-right: 10rem;
+    }
+    .skills{
+        margin-right: 120rem;
+        margin-top: 12rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    /* Reset any adjustments made for smaller screens */
+    .horizontal-nav {
+        display: flex;
+        justify-content: space-between;
+        
+        
+    }
+    .hori-menu{
+        min-width: 18%;
+    }
+    article{
+        margin-left: 2rem;
+    }
+
+    .hori-menu {
+        width: auto;
+        flex-direction: column;
+        max-width: 300px;
+    }
+
+    .hori-items {
+        padding: 0.5rem 1rem;
+    }
+  
+
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+
+    article {
+        width: auto;
+    }
+
+    .my-pic {
+        width: 300px;
+        height: 400px;
+    }
+    .skills{
+        margin-right: 50rem;
+        margin-top: 7.5rem;
+    }
+}
+@media (max-width: 1024px) {
+    .horizontal-nav {
+        display: flex;
+        justify-content: space-between;
+        
+        
+    }
+    .hori-menu{
+        min-width: 18%;
+    }
+    article{
+        margin-left: 2rem;
+    }
+
+    .hori-menu {
+        width: auto;
+        flex-direction: column;
+        max-width: 300px;
+    }
+
+    .hori-items {
+        padding: 0.5rem 1rem;
+    }
+  
+
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+    .squaretext{
+       
+        width: 500px; /* Set the width to create a square */
+        height: 250px; /* Set the height to match the width */
+        background-color: lightgray;
+        padding: 10px;
+        text-align: justify;
+        line-height: 1.5;
+    
+
+    }
+
+    article {
+        width: auto;
+    }
+
+    .my-pic {
+        width: 270px;
+        height: 380px;
+    }
+    .contact-items .name{
+        margin-right: 2rem;  
+    }
+    .contact-items .email{
+        margin-left: 3rem;
+    }
+    .mail{
+        padding-right: 3.3rem;
+    }
+    .contact-items .message{
+        margin-left: 1rem;
+    }
+    
+    .msg{
+        padding-left: 2rem;
+    }
+    
+    .form-btn-field{
+        margin-top: 0;
+    }
+
+    .skills{
+        margin-right: 50rem;
+        margin-top: 7.5rem;
+    }
+    .skills{
+        margin-left: 6rem;
+        margin-top: 7.5rem;
+        overflow-y: hidden;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    /* Reset any adjustments made for smaller screens */
+    .navmenu{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .logo {
+        padding: 1rem;
+        text-align: left;
+    }
+
+    .projects {
+        font-size: large;
+        text-align: left;
+        padding: 1rem;
+    }
+
+    .searchbar {
+        padding: 1rem;
+        text-align: left;
+        max-width: 2rem;
+    }
+/* horizontal nav */
+    .horizontal-nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hori-menu {
+        width: auto;
+        flex-direction: column;
+    }
+
+    .hori-items {
+        padding: 0.5rem 1rem;
+    }
+
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+
+    article {
+        width: auto;
+    }
+
+    .my-pic {
+        width: 400px;
+        height: 600px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .navmenu{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    /* Adjust the logo */
+    
+   
+    .logo {
+        padding: 1rem;
+        text-align: left; /* Reset text alignment */
+        font-size: larger;
+        cursor: pointer;
+    }
+    /* Add this CSS to your stylesheet */
+    li:hover .dropdown {
+    display: block;
+    }
+
+    
+    
+    /* Adjust the projects link */
+    .projects {
+        font-size: large; /* Increase font size */
+        text-align: left; /* Reset text alignment */
+        margin-right: 2rem; /* Adjust padding */
+    }
+
+    .searchbar{
+        margin-right: 2rem;
+        max-width: 20%;
+    }
+    .searchbar input[type="text"] {
+       
+        
+        font-size: small;
+    }
+
+    .horizontal-nav {
+        flex-direction: row; /* Restore horizontal layout */
+        justify-content: space-between; /* Add spacing between horizontal items */
+        align-items: center; 
+        /* Align items vertically */
+    }
+
+    .hori-menu {
+        width: auto; /* Reset width */
+        flex-direction: row;
+        display: none; /* Align menu items horizontally */
+    }
+
+    
+
+    main {
+        flex-direction: column; /* Restore horizontal layout */
+        justify-content: space-between; /* Add spacing between content and aside */
+        align-items: center; /* Align items vertically */
+        margin: 0 1rem; /* Adjust margins */
+    }
+
+    article {
+        width: 60%;
+        font-size: larger;
+        padding-left:3rem; /* Adjust width for content */
+    }
+    .squaretext{
+        padding-right: 2rem;
+    }
+
+    .my-pic {
+        width: 400px; /* Adjust width */
+        height: 420px;
+        padding-left: 7rem; /* Maintain aspect ratio */
+    }
+    aside{
+        padding-top: 0;
+    }
+    .skills{
+        margin-right: 50rem;
+        margin-top: 7.5rem;
+        margin-left: 4rem;
+        margin-bottom: 5rem;
+        overflow-y: hidden;
+    }
+
+    #contact-section{
+        height: auto;
+     }
+     html{
+        font-size: 70%;
+     }
+     .contact-form{
+        margin-left: 5rem;
+     }
+     .msg{
+        margin-left: 0;
+     }
+     .message{
+        margin-left: 0;
+     }
+     .about-me{
+   
+        width: 80%;
+        background-color: #b9b9b9;
+        margin: 2rem;
+       
+    }
+    .horizontal-nav{
+        flex-direction: column;
+    }
+    
+    .about-me-paragraph{
+        padding: 2rem;
+        font-size: large;
+        text-align: justify;
+        line-height: 1.5;
+    }
+    .experiences{
+        width: 80%;
+        background-color: #b9b9b9;
+      
+       margin: 2rem;
+        padding: 20px;
+        
+        font-size: large;
+        text-align: justify;
+        line-height: 1.5;
+    }
+    
+    .experience-header{
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+}
+
+
+@media screen and (max-width: 600px) {
+    .horizontal-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+    }
+    .logo{
+        font-size: small;
+        margin-right: 2rem;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .searchbar{
+        margin-right: 5rem;
+        max-width: 10%;
+    }
+    .searchbar input[type="text"] {
+       
+        
+        font-size: smaller;
+    }
+    .head{
+      font-size: larger;
+    }
+    h1{
+        margin-left: 5.3rem;
+    }
+
+    article {
+
+        min-width: 30%;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .squaretext{
+       font-size: small;
+       padding-left: 2rem;
+    }
+
+    .my-pic {
+        width: 300px; /* Adjust width */
+        height: 280px;
+        margin-right: 5rem; /* Maintain aspect ratio */
+    }
+    aside{
+        max-width: 80%;
+        margin-top: 0;
+        padding-top: 0;
+        
+    }
+
+    
+
+    main {
+        flex-direction: column; /* Stack content vertically */
+    }
+
+    html{
+        font-size: 55.5%;
+    }
+    .name{
+        max-width: 5%;
+    }
+    .msg{
+        max-width: 15%;
+    }
+  
+    .mail{
+        max-width: 5%;
+    }
+    .skill{
+        max-width: 40%;
+        margin-left: 20rem;
+    }
+  
+  
+    
+}
